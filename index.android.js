@@ -9,16 +9,26 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  ScrollView,
 } from 'react-native';
 
 import Header from './src/components/Header';
+import HeaderExt from './src/components/HeaderExt';
+import Card from './src/components/Card';
 
 const toggleme = () => {
   return (
     <View style={styles.container}>
-      <Header text={'toggleme'}/>
-      <Text style={styles.welcome}> Hello World !!! </Text>
+      <Header text={'TOGGLE ME'}/>
+      <ScrollView showsVerticalScrollIndicator={false} >
+        <HeaderExt />
+        <Card text='BEDROOM'/>
+        <Card text='HALL'/>
+        <Card text='KITCHEN'/>
+        <Card text='BATHROOM'/>
+        <Card text='BALCONY'/>
+      </ScrollView>
     </View>
   )
 }
@@ -26,7 +36,7 @@ const toggleme = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#e9e9e9',
   },
   welcome: {
     fontSize: 20,

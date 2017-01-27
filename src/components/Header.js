@@ -1,29 +1,24 @@
 // Import library to help create a component
 import React from 'react';
 import { Text, View } from 'react-native';
-import { SocialIcon } from 'react-native-elements';
+import { SocialIcon, Icon } from 'react-native-elements';
 
 // Make a component
 const Header = ({text}) => {
   return (
     <View style={styles.container}>
       <View style={styles.left}>
-        <SocialIcon type='twitter' />
+        <Icon
+          reverse
+          name='sc-telegram'
+          type='evilicon'
+          size={15}
+          color='#517fa4'
+        />
       </View>
       <View style={styles.center}>
         <Text style={styles.text}>{text}</Text>
       </View>
-      <View style={styles.right} />
-    </View>
-  );
-};
-
-const HeaderExtend = () => {
-  return (
-    <View style={styles.extend}>
-      <Text>a</Text>
-      <Text>a</Text>
-      <Text>a</Text>
     </View>
   );
 };
@@ -32,43 +27,29 @@ const styles = {
   container: {
     backgroundColor: '#CD5C5C',
     flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
     height: 70,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
-    elevation: 2,
-    //position: 'relative'
-  },
-  extend: {
-    backgroundColor: '#CD5C5C',
-    flexDirection: 'row',
-    height: 70,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    elevation: 2,
+    // elevation: 2,
     //position: 'relative'
   },
   left: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
+    paddingRight: 10,
+    paddingLeft: 20,
   },
   center: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent:'center',
-    alignItems: 'center',
+    paddingRight: 10,
   },
   right: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent:'flex-end',
-    alignItems: 'center',
+    paddingRight: 20,
+    paddingLeft: 20,
   },
   text: {
-    fontSize: 20
+    fontSize: 15,
+    fontWeight: '500',
   }
 };
 
