@@ -1,13 +1,21 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import Icon1 from 'react-native-vector-icons/FontAwesome';
+import Icon2 from 'react-native-vector-icons/Foundation';
+import Icon3 from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const HeaderExt = () => {
   return (
     <View style={styles.container}>
-      <Text>a</Text>
-      <Text>b</Text>
-      <Text>c</Text>
-      <Text>d</Text>
+      <Icon3 name="lan-connect" size={40} color='#28bfca'>
+        <Text style={{fontSize: 9}}>CONNECTION</Text>
+      </Icon3>
+      <Icon1 name="rupee" size={40} color='#7fbf7f'>
+        <Text style={{fontSize: 9}}>REPORTS</Text>
+      </Icon1>
+      <Icon3 name="history" size={40} color='#ffb732'>
+        <Text style={{fontSize: 9}}>HISTORY</Text>
+      </Icon3>
     </View>
   );
 };
