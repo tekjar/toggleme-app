@@ -16,6 +16,15 @@ import {
 import Header from './src/components/Header';
 import HeaderExt from './src/components/HeaderExt';
 import Card from './src/components/Card';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import Device from './src/components/Device';
+
+const bedroom = ['light', 'light', 'fan', 'socket', 'socket', 'ac'].map( device => <Device type={device} />)
+const kitchen = ['light', 'light', 'socket', 'socket'].map( device => <Device type={device} />)
+const bathroom = ['light', 'light', 'socket'].map( device => <Device type={device} />)
+const hall = ['light', 'light', 'fan', 'fan', 'socket', 'socket', 'ac'].map( device => <Device type={device} />)
+const balcony = ['light', 'light', 'light', 'socket', 'socket', 'socket'].map( device => <Device type={device} />)
+
 
 const toggleme = () => {
   return (
@@ -23,11 +32,21 @@ const toggleme = () => {
       <Header text={'TOGGLE ME'}/>
       <ScrollView showsVerticalScrollIndicator={false} >
         <HeaderExt />
-        <Card text='BEDROOM'/>
-        <Card text='HALL'/>
-        <Card text='KITCHEN'/>
-        <Card text='BATHROOM'/>
-        <Card text='BALCONY'/>
+        <Card text='HALL'>
+          {hall}
+        </Card>
+        <Card text='BEDROOM'>
+          {bedroom}
+        </Card>
+        <Card text='KITCHEN'>
+          {kitchen}
+        </Card>
+        <Card text='BATHROOM'>
+          {bathroom}
+        </Card>
+        <Card text='BALCONY'>
+          {balcony}
+        </Card>
       </ScrollView>
     </View>
   )

@@ -1,5 +1,6 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 const Card = (props) => {
@@ -9,7 +10,9 @@ const Card = (props) => {
                 <Text style={styles.text}>{props.text}</Text>
             </View>
             <View style={styles.container} > 
-                {props.children}
+                <ScrollView horizontal ={true} showsHorizontalScrollIndicator={false} contentContainerStyle={styles.scroll}>
+                    {props.children}
+                </ScrollView>
             </View>
         </View>
     );
@@ -29,9 +32,12 @@ const styles = {
         marginLeft: 15,
         marginRight: 15,
         marginBottom: 10,
-
-        height: 200,
+        height: 100,
         backgroundColor: '#f6f6f6',
+    },
+    scroll: {
+        alignItems: 'center',
+        justifyContent: 'space-around',
     },
     heading: {
         height: 50,
