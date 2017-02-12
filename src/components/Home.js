@@ -6,8 +6,8 @@ import Room from './Room';
 import Device from './Device';
 
 const houseBluePrint = (room) => {
-    console.log(room.devices);
-    const devices = room.devices.map(device => <Device key={device.id} type={device.type} />);
+    // console.log(room.devices);
+    const devices = room.devices.map(device => <Device key={device.id} id={device.id} type={device.type} />);
     return <Room key={room.id} name={room.name} >{devices}</Room>;
 };
 
