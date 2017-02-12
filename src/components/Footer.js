@@ -3,26 +3,30 @@ import { Text, View } from 'react-native';
 import Icon1 from 'react-native-vector-icons/FontAwesome';
 import Icon2 from 'react-native-vector-icons/Foundation';
 import Icon3 from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon4 from 'react-native-vector-icons/Entypo';
+import Icon5 from 'react-native-vector-icons/MaterialIcons'
 
-const HeaderExt = () => {
+const Footer = () => {
   return (
     <View style={styles.container}>
-      <Icon3 name="lan-connect" size={40} color='#28bfca'>
-        <Text style={{fontSize: 9}}>CONNECTION</Text>
+      <Icon2 name="home" size={25} color='#CD5C5C'>
+      </Icon2>
+      <Icon5 name="notifications" size={25} >
+      </Icon5>
+      <Icon3 name="auto-fix" size={25} >
       </Icon3>
-      <Icon1 name="rupee" size={40} color='#7fbf7f'>
-        <Text style={{fontSize: 9}}>REPORTS</Text>
-      </Icon1>
-      <Icon3 name="history" size={40} color='#ffb732'>
-        <Text style={{fontSize: 9}}>HISTORY</Text>
-      </Icon3>
+      <Icon4 name="line-graph" size={25} >
+      </Icon4>
     </View>
   );
 };
 
 const styles = {
   container: {
-    backgroundColor: '#CD5C5C',
+    backgroundColor: '#f6f6f6',
+    borderColor: '#e9e9e9',
+    borderTopWidth: 1,
+    borderBottomWidth: 0,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
@@ -31,9 +35,8 @@ const styles = {
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     elevation: 2,
-    marginBottom: 10,
     position: 'relative'
   },
-};
+}
 
-export default HeaderExt;
+export default Footer;

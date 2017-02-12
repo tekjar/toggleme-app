@@ -1,16 +1,20 @@
 import React from 'react';
-import {View, Text, ScrollView} from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
-const Card = (props) => {
+const Room = (props) => {
     return (
         <View>
             <View style={styles.heading}>
                 <Text style={styles.text}>{props.text}</Text>
             </View>
-            <View style={styles.container} > 
-                <ScrollView horizontal ={true} showsHorizontalScrollIndicator={false} contentContainerStyle={styles.scroll}>
+            <View style={styles.container} >
+                <ScrollView
+                    horizontal
+                    showsHorizontalScrollIndicator={false}
+                    contentContainerStyle={styles.scroll}
+                >
                     {props.children}
                 </ScrollView>
             </View>
@@ -54,4 +58,4 @@ const styles = {
     },
 };
 
-export default Card;
+export default Room;

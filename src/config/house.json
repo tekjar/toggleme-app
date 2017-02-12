@@ -1,0 +1,152 @@
+[
+  {
+    "id": 0,
+    "name": "BEDROOM",
+    "devices": [
+        {
+            "id": 1,
+            "type": "light"
+        },
+        {
+            "id": 2,
+            "type": "light"
+        },
+        {
+            "id": 3,
+            "type": "fan"
+        },
+        {
+            "id": 4,
+            "type": "socket"
+        },
+        {
+            "id": 5,
+            "type": "socket"
+        },
+        {
+            "id": 6,
+            "type": "ac"
+        }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "BATHROOM",
+    "devices": [
+        {
+            "id": 1,
+            "type": "light"
+        },
+        {
+            "id": 2,
+            "type": "light"
+        },
+        {
+            "id": 3,
+            "type": "fan"
+        },
+        {
+            "id": 4,
+            "type": "socket"
+        },
+        {
+            "id": 5,
+            "type": "socket"
+        },
+        {
+            "id": 6,
+            "type": "ac"
+        }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "HALL",
+    "devices": [
+        {
+            "id": 1,
+            "type": "light"
+        },
+        {
+            "id": 2,
+            "type": "light"
+        },
+        {
+            "id": 3,
+            "type": "fan"
+        },
+        {
+            "id": 4,
+            "type": "socket"
+        },
+        {
+            "id": 5,
+            "type": "socket"
+        },
+        {
+            "id": 6,
+            "type": "ac"
+        }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "KITCHEN",
+    "devices": [
+        {
+            "id": 1,
+            "type": "light"
+        },
+        {
+            "id": 2,
+            "type": "light"
+        },
+        {
+            "id": 3,
+            "type": "fan"
+        },
+        {
+            "id": 4,
+            "type": "socket"
+        },
+        {
+            "id": 5,
+            "type": "socket"
+        },
+        {
+            "id": 6,
+            "type": "ac"
+        }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "BALCONY",
+    "devices": [
+        {
+            "id": 1,
+            "type": "light"
+        },
+        {
+            "id": 2,
+            "type": "light"
+        },
+        {
+            "id": 3,
+            "type": "fan"
+        },
+        {
+            "id": 4,
+            "type": "socket"
+        },
+        {
+            "id": 5,
+            "type": "socket"
+        },
+        {
+            "id": 6,
+            "type": "ac"
+        }
+    ]
+  }
+]

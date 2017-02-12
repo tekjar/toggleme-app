@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 import { SocialIcon, Icon } from 'react-native-elements';
 
 // Make a component
-const Header = ({text}) => {
+const Header = ({ text }) => {
   return (
     <View style={styles.container}>
       <View style={styles.left}>
