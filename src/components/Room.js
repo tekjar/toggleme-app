@@ -7,7 +7,7 @@ const Room = (props) => {
     return (
         <View>
             <View style={styles.heading}>
-                <Text style={styles.text}>{props.text}</Text>
+                <Text style={styles.text}>{props.name}</Text>
             </View>
             <View style={styles.container} >
                 <ScrollView

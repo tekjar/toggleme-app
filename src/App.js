@@ -11,11 +11,13 @@ import Footer from './components/Footer';
 
 import house from './config/house.json';
 
-const bedroom = ['light', 'light', 'fan', 'socket', 'socket', 'ac'].map(device => <Device type={device} />);
-const kitchen = ['light', 'light', 'socket', 'socket'].map(device => <Device type={device} />);
-const bathroom = ['light', 'light', 'socket'].map(device => <Device type={device} />);
-const hall = ['light', 'light', 'fan', 'fan', 'socket', 'socket', 'ac'].map(device => <Device type={device} />);
-const balcony = ['light', 'light', 'light', 'socket', 'socket', 'socket'].map(device => <Device type={device} />);
+const houseBluePrint = (room) => {
+    console.log(room.devices);
+    const devices = room.devices.map(device => <Device key={device.id} type={device.type} />);
+    return <Room key={room.id} name={room.name} >{devices}</Room>;
+};
+
+const rooms = house.map(houseBluePrint);
 
 const App = () => {
     return (
@@ -24,21 +26,7 @@ const App = () => {
                 <Header text={'TOGGLE ME'} />
                 <ScrollView showsVerticalScrollIndicator={false} >
                     <HeaderExt />
-                    <Room text='HALL'>
-                        {hall}
-                    </Room>
-                    <Room text='BEDROOM'>
-                        {bedroom}
-                    </Room>
-                    <Room text='KITCHEN'>
-                        {kitchen}
-                    </Room>
-                    <Room text='BATHROOM'>
-                        {bathroom}
-                    </Room>
-                    <Room text='BALCONY'>
-                        {balcony}
-                    </Room>
+                    {rooms}
                 </ScrollView>
                 <Footer />
             </View>
