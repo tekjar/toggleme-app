@@ -5,28 +5,19 @@ import { createStore } from 'redux';
 import reducers from './reducers/';
 import Header from './components/Header';
 import HeaderExt from './components/HeaderExt';
-import Room from './components/Room';
-import Device from './components/Device';
 import Footer from './components/Footer';
+import Home from './components/Home';
 
-import house from './config/house.json';
-
-const houseBluePrint = (room) => {
-    console.log(room.devices);
-    const devices = room.devices.map(device => <Device key={device.id} type={device.type} />);
-    return <Room key={room.id} name={room.name} >{devices}</Room>;
-};
-
-const rooms = house.map(houseBluePrint);
 
 const App = () => {
     return (
+        // Create a store with all the available reducers
         <Provider store={createStore(reducers)}>
             <View style={styles.container}>
                 <Header text={'TOGGLE ME'} />
                 <ScrollView showsVerticalScrollIndicator={false} >
                     <HeaderExt />
-                    {rooms}
+                    <Home />
                 </ScrollView>
                 <Footer />
             </View>

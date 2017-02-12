@@ -1,152 +1,136 @@
-[
-  {
-    "id": 0,
-    "name": "BEDROOM",
-    "devices": [
+{
+    "name": "Bangalore-1570",
+    "address": "HAL 3rd stage, Bangalore-560008",
+    "rooms": [
+        {
+            "id": 0,
+            "name": "BEDROOM",
+            "devices": [
+                {
+                    "id": 1,
+                    "type": "light"
+                },
+                {
+                    "id": 2,
+                    "type": "light"
+                },
+                {
+                    "id": 3,
+                    "type": "fan"
+                },
+                {
+                    "id": 4,
+                    "type": "socket"
+                },
+                {
+                    "id": 5,
+                    "type": "socket"
+                },
+                {
+                    "id": 6,
+                    "type": "ac"
+                }
+            ]
+        },
         {
             "id": 1,
-            "type": "light"
+            "name": "BATHROOM",
+            "devices": [
+                {
+                    "id": 1,
+                    "type": "light"
+                },
+                {
+                    "id": 2,
+                    "type": "light"
+                },
+                {
+                    "id": 3,
+                    "type": "socket"
+                },
+                {
+                    "id": 4,
+                    "type": "socket"
+                }
+            ]
         },
         {
             "id": 2,
-            "type": "light"
+            "name": "HALL",
+            "devices": [
+                {
+                    "id": 1,
+                    "type": "light"
+                },
+                {
+                    "id": 2,
+                    "type": "light"
+                },
+                {
+                    "id": 3,
+                    "type": "fan"
+                },
+                {
+                    "id": 4,
+                    "type": "socket"
+                },
+                {
+                    "id": 5,
+                    "type": "socket"
+                },
+                {
+                    "id": 6,
+                    "type": "ac"
+                }
+            ]
         },
         {
             "id": 3,
-            "type": "fan"
+            "name": "KITCHEN",
+            "devices": [
+                {
+                    "id": 1,
+                    "type": "light"
+                },
+                {
+                    "id": 2,
+                    "type": "light"
+                },
+                {
+                    "id": 4,
+                    "type": "socket"
+                },
+                {
+                    "id": 5,
+                    "type": "socket"
+                }
+            ]
         },
         {
             "id": 4,
-            "type": "socket"
-        },
-        {
-            "id": 5,
-            "type": "socket"
-        },
-        {
-            "id": 6,
-            "type": "ac"
+            "name": "BALCONY",
+            "devices": [
+                {
+                    "id": 1,
+                    "type": "light"
+                },
+                {
+                    "id": 2,
+                    "type": "light"
+                },
+                {
+                    "id": 3,
+                    "type": "light"
+                },
+                {
+                    "id": 4,
+                    "type": "socket"
+                },
+                {
+                    "id": 5,
+                    "type": "socket"
+                }
+            ]
         }
     ]
-  },
-  {
-    "id": 1,
-    "name": "BATHROOM",
-    "devices": [
-        {
-            "id": 1,
-            "type": "light"
-        },
-        {
-            "id": 2,
-            "type": "light"
-        },
-        {
-            "id": 3,
-            "type": "fan"
-        },
-        {
-            "id": 4,
-            "type": "socket"
-        },
-        {
-            "id": 5,
-            "type": "socket"
-        },
-        {
-            "id": 6,
-            "type": "ac"
-        }
-    ]
-  },
-  {
-    "id": 2,
-    "name": "HALL",
-    "devices": [
-        {
-            "id": 1,
-            "type": "light"
-        },
-        {
-            "id": 2,
-            "type": "light"
-        },
-        {
-            "id": 3,
-            "type": "fan"
-        },
-        {
-            "id": 4,
-            "type": "socket"
-        },
-        {
-            "id": 5,
-            "type": "socket"
-        },
-        {
-            "id": 6,
-            "type": "ac"
-        }
-    ]
-  },
-  {
-    "id": 3,
-    "name": "KITCHEN",
-    "devices": [
-        {
-            "id": 1,
-            "type": "light"
-        },
-        {
-            "id": 2,
-            "type": "light"
-        },
-        {
-            "id": 3,
-            "type": "fan"
-        },
-        {
-            "id": 4,
-            "type": "socket"
-        },
-        {
-            "id": 5,
-            "type": "socket"
-        },
-        {
-            "id": 6,
-            "type": "ac"
-        }
-    ]
-  },
-  {
-    "id": 4,
-    "name": "BALCONY",
-    "devices": [
-        {
-            "id": 1,
-            "type": "light"
-        },
-        {
-            "id": 2,
-            "type": "light"
-        },
-        {
-            "id": 3,
-            "type": "fan"
-        },
-        {
-            "id": 4,
-            "type": "socket"
-        },
-        {
-            "id": 5,
-            "type": "socket"
-        },
-        {
-            "id": 6,
-            "type": "ac"
-        }
-    ]
-  }
-]
+}
